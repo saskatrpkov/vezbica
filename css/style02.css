@@ -1,0 +1,70 @@
+img{
+    height: 800px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+@keyframes animacija1{
+    from { color: black; }
+    to { color: blue; }
+}
+
+@keyframes animacija2{
+    0% { color: black; }
+    50% { color: pink;}
+    100% { color:green;}
+}
+
+p {
+    animation-name: animacija3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+img:hover{
+    transform: scale(1.5,1.5);
+    transition-duration: 2s;
+    animation-name: transformacija2;
+    animation-duration: 2s;
+    transform: ;
+}
+
+
+
+@keyframes transformacija2{
+    0%{
+        transform: translate(0,0);
+        opacity: 0.5;
+    }
+    100%{
+        transform: translate(10px,0);
+        opacity: 1;
+    }
+}
+
+@keyframes animacija3{
+    0%{
+        color: aliceblue;
+        border: none;
+    }
+    25%{
+        color: brown;
+        border: 2px solid black;
+    }
+    50%{
+        color: pink;
+        border-top: 2px solid yellow;
+    }
+    75%{
+        color: green;
+        border-left: 2px solid pink;
+    }
+    100%{
+        color: blue;
+        border-bottom: 2px solid green;
+    }
+}
